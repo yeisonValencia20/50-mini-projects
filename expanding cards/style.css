@@ -1,0 +1,54 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.container {
+    height: 100%;
+    padding: 5em;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.card {
+    flex: 1;
+    height: 60rem;
+    border-radius: 5rem;
+    position: relative;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+
+.card h2 {
+    transition: 0.5s ease-in 0.4s;
+}
+
+.card--mr-20 {
+    margin-right: 2rem;
+}
+
+.card--minimized {
+    flex: 0 0 10rem;
+}
+
+.card--minimized h2 {
+    opacity: 0;
+    
+}
+
+.card__title {
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    bottom: 1.11em;
+    left: 1.11em;
+    margin: 0;
+}
