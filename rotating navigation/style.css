@@ -1,0 +1,150 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #333;
+}
+
+.container {
+    width: 100%;
+    background: white;
+    padding: 50px;
+    transition: all .5s linear;
+    transform-origin: top left;
+}
+
+.nav-rotation-buton {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    background: lightcoral;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.4s linear;
+}
+
+.nav-rotation-buton button {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+}
+
+.nav-rotation-buton button:nth-child(2) {
+    left: 60%;
+}
+
+.nav-rotation-buton button:nth-child(1) {
+    top: 60%;
+    transform-origin: left top;
+    transform: rotate(90deg);
+}
+
+.article {
+    width: 80%;
+    margin: auto;
+}
+
+.article h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.article span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.article p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.article h3 {
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-bar {
+    position: fixed;
+    bottom: 40px;
+    width: 170px;
+}
+
+.nav-bar i {
+    margin-right: 5px;
+}
+
+.navlink {
+    display: block;
+    padding: 20px 0px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+    transition: transform .4s ease-in;
+}
+
+.navlink:hover {
+    color: coral;
+
+}
+
+.rotate {
+    transform: rotate(-20deg);
+}
+
+.rotate-90 {
+    transform: rotate(-90deg);
+}
+
+.navlink:nth-child(1) {
+    margin-left: 0px;
+    transform: translate(-110%)
+}
+
+.navlink:nth-child(2) {
+    margin-left: 10px;
+    transform: translate(-120%)
+}
+
+.navlink:nth-child(3) {
+    margin-left: 20px;
+    transform: translate(-130%)
+}
+
+.show {
+    transform: translate(0%) !important;
+    transition-delay: 0.3s;
+}
