@@ -1,0 +1,55 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    background: rgb(130, 3, 248);
+    height: 100%;
+    display: flex;
+}
+
+.flex-container {
+    width: 30rem;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.input {
+    padding: 15px;
+    width: 100%;
+    font-size: 1.6rem;
+    background: white;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.button {
+    font-size: 2rem;
+    padding: 15px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: white;
+}
+
+.button:hover{
+    background: #eee;
+}
+
+.hide {
+    padding: 0;
+    width: 0px;
+}
