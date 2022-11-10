@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(50, 117, 156);
+}
+
+.login {
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.login__title {
+    font-size: 3rem;
+}
+
+.form__element {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 30rem;
+}
+
+.form__label {
+    text-align: left;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form__element .form__label span {
+    display: inline-block;
+    font-size: 1.8rem;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+.form__input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    padding: 15px 0;
+    background-color: transparent;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.form__input:focus,
+.form__input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.6rem;
+    background-color: lightblue;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:focus {
+    transform: scale(.98);
+}
+
+.form > p {
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+.form > p > a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.form__input:focus + .form__label span,
+.form__input:valid + .form__label span{
+    color: lightblue;
+    transform: translateY(-30px);
+}
