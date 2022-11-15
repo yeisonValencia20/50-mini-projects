@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+.keyContainer {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.message, .keyContainer__item {
+    font-size: 2rem;
+    font-weight: bold;
+    min-width: 150px;
+    padding: 20px;
+    color: black;
+    border: 2px solid lightgray;
+}
